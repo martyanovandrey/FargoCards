@@ -4,8 +4,8 @@
 
 # Поиграть
 
-[На Heroku](https://fargocards.herokuapp.com/)
-[На Yandex.Cloud](https://fargo-cards-5.ya-praktikum.tech/)
+- [На Heroku](https://fargocards.herokuapp.com/)
+- [На Yandex.Cloud](https://fargo-cards-5.ya-praktikum.tech/)
 
 
 # Установка dev https
