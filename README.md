@@ -1,38 +1,38 @@
 # FargoCards
 
-Обучающая игра-викторина по мотивам TinyCards, разработанная Duolingo, для обучения с помощью карточек на разные темы. В его основе лежит система, которая предполагает интервальное повторение новых слов и понятий до тех пор, пока учащийся не запомнит материал.
+An educational quiz game inspired by TinyCards, developed by Duolingo, for learning with cards on a variety of topics. It is based on a system that assumes interval repetition of new words and concepts until the student memorizes the material.
 
-# Поиграть
+# Play
 
-- [На Yandex.Cloud](https://fargo-cards-5.ya-praktikum.tech/)
-- [На Heroku](https://fargocards.herokuapp.com/)
+- [On Yandex.Cloud](https://fargo-cards-5.ya-praktikum.tech/)
+- [On Heroku](https://fargocards.herokuapp.com/)
 
-# Реализация
-Основной стек приложения - Typescript, React, Redux, сама игра отрисовывается на canvas. 
+# Implementation
+Main application stack - Typescript, React, Redux, the game itself is rendered on canvas. 
 
-В приложении реальзованы: 
+The webapp implements:
 - Server-side rendering (SSR)
 - Service worker
-- Обмен данных с бд - PostgreSQL с помощью Sequelize
+- Data exchange with the database - PostgreSQL with Sequelize
 
-Приложение и бд разворачиваются в Docker. Тесты написаны на Jest.
+The application and database are deployed in Docker. The tests are written in Jest.
 
-# Запустить
+# Run
 
 ```
 npm run start:container
 ```
 
-В докере запускается 3 контейнера - game, database, pgadmin. На Windows - убедиться, что включена виртуализация.
+Docker runs 3 containers - game, database, pgadmin. On Windows, make sure virtualization is enabled.
 
-# Установка dev https
-- нужно установить mkcert и запустить mkcert -install
-инфа здесь https://web.dev/how-to-use-local-https/
-- перейти во вкладку server/devCert и создать сертификат
+# Install dev https
+- you need to install mkcert and run mkcert -install
+info here https://web.dev/how-to-use-local-https/
+- go to the server / devCert tab and create a certificate
 `mkcert -key-file key.pem -cert-file cert.pem ya-praktikum.tech *.ya-praktikum.tech`
 
 # OAuth
-Проверем на адресе https://localhost:5000
+Check at the address https://localhost:5000
 
-# Обычная (и серверная) аутентификация
-Адрес https://local.ya-praktikum.tech:5000/
+# Basic (and server-side) authentication
+https://local.ya-praktikum.tech:5000/
